@@ -290,19 +290,17 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array){
-  let newList = array.push({
-  id: 20,
+  let newArray = array.push({
+  id: array.length,
   name: "Veronica A. Mendez", 
   years: "1977 - today",
   genre: "Web Design", 
   nationality: "US American",
   bio: "Why are there so many songs about rainbows? Someday we'll find it, the rainbow connection. The lovers, the dreamers, and me."
   });
-  return newList;
+  return newArray;
 }
-console.log(artists);
-
-  
+console.log(addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
